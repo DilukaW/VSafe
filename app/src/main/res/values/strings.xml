@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">VSafe</string>
+
+    <string-array name="blood_group">
+        <item>A+</item>
+        <item>A-</item>
+        <item>B+</item>
+        <item>B-</item>
+        <item>O+</item>
+        <item>O-</item>
+        <item>AB+</item>
+        <item>AB-</item>
+    </string-array>
+
+    <string-array name="relationship">
+        <item>Parent</item>
+        <item>Spouse</item>
+        <item>Child</item>
+        <item>Sibling</item>
+        <item>Other</item>
+    </string-array>
+</resources>

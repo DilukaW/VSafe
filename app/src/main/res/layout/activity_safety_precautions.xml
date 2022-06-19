@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SafetyPrecautionsActivity">
+
+    <ImageView
+        android:id="@+id/imageView33"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/splash_wave_2" />
+
+    <TextView
+        android:id="@+id/textView39"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="16dp"
+        android:text="Safety Precautions"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtGreet4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="2dp"
+        android:text="Your Safety is Our Top Priority"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView39" />
+
+    <ImageView
+        android:id="@+id/imageView34"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="25dp"
+        android:adjustViewBounds="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView33"
+        app:srcCompat="@drawable/logo_horizontal" />
+
+    <TextView
+        android:id="@+id/textView43"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="25dp"
+        android:text="Please follow the standard precautions!"
+        android:textAlignment="center"
+        android:textColor="@color/primary_blue"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView34" />
+
+    <TextView
+        android:id="@+id/textView45"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="25dp"
+        android:text="🔴 In an emergency | When you hear it | Do it"
+        android:textAlignment="center"
+        android:textColor="#6D6A6A"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView43" />
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/scrollview_bg"
+        android:fadeScrollbars="false"
+        android:fillViewport="true"
+        android:paddingStart="5dp"
+        android:paddingTop="10dp"
+        android:paddingEnd="5dp"
+        android:paddingBottom="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView45">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.gouravkhunger.accolib.widget.Accordion
+                android:id="@+id/accordion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="-10dp"
+                app:text="Hazards vary depending on where you live. Identify the hazards near you so you can create your emergency plan.  Emergencies affect us all differently and help is not always available in the way we expect. Learn what steps you can take to ensure your needs are met when it matters most.   •Be prepared •Be informed •Connect with neighbours •Financial preparedness •Protect your pets"
+                app:textColor="#6D6A6A"
+                app:textSize="16sp"
+                app:title="Before an emergency"
+                app:titleColor="#303030"
+                app:titleSize="18sp" />
+
+            <com.gouravkhunger.accolib.widget.Accordion
+                android:id="@+id/accordion3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="-10dp"
+                app:text="Emergencies have the potential to cause serious harm to people, property, the economy and the environment. Make sure you know who to call and what to do during an emergency or disaster.  Protecting yourself and your loved ones will depend on the hazard, but these tips can help you manage emergencies and disasters safely.  •Shelter-in-place •Evacuation alerts and orders •Emergency evacuation payments •Stay informed •Connect with neighbours •If there is time •We are all in this together"
+                app:textColor="#6D6A6A"
+                app:textSize="16sp"
+                app:title="During an emergency"
+                app:titleColor="#303030"
+                app:titleSize="18sp" />
+
+            <com.gouravkhunger.accolib.widget.Accordion
+                android:id="@+id/accordion4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="-10dp"
+                app:text="The lingering effects of unexpected emergencies and disasters are different for everyone. Knowing what to do after an emergency can help reduce stress and aid in a quicker recovery.  If you had to evacuate, you cannot return home until authorities have told you it’s safe to do so. Use extreme caution at all times.  Being prepared can help speed up your recovery time, so you can get back to your life and work sooner.  •Recovery is a process •Re-entry •Connect with neighbours •Your mental health •Recovery assistance •We are all in this together"
+                app:textColor="#6D6A6A"
+                app:textSize="16sp"
+                app:title="After an emergency"
+                app:titleColor="#303030"
+                app:titleSize="18sp" />
+
+            <com.gouravkhunger.accolib.widget.Accordion
+                android:id="@+id/accordion5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="-10dp"
+                app:text="Check with your community to learn how to help others during severe weather events. If you are concerned for someone’s safety, call:  •119 if someone is in distress or in an unsafe place •1990 if they’re unconscious or need medical help"
+                app:textColor="#6D6A6A"
+                app:textSize="16sp"
+                app:title="Helping others"
+                app:titleColor="#303030"
+                app:titleSize="18sp" />
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

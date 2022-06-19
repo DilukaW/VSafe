@@ -1,0 +1,409 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ReportCaseDetailsActivity">
+
+    <ImageView
+        android:id="@+id/imageView43"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/splash_wave_2" />
+
+    <TextView
+        android:id="@+id/txtRCDetailTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="25dp"
+        android:text="Case Details"
+        android:textAlignment="center"
+        android:textColor="@color/primary_blue"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView43" />
+
+    <ImageView
+        android:id="@+id/imageView44"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="25dp"
+        android:adjustViewBounds="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo_white" />
+
+    <TextView
+        android:id="@+id/textView72"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="16dp"
+        android:text="Report the Case"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtGreet8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="2dp"
+        android:text="3. Details"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView72" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="25dp"
+        android:background="@drawable/scrollview_bg"
+        android:orientation="vertical"
+        android:paddingStart="15dp"
+        android:paddingTop="15dp"
+        android:paddingEnd="15dp"
+        android:paddingBottom="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtRCDetailTitle">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView81"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3.2"
+                android:text="Date &amp; Time"
+                android:textColor="#303030"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/textView85"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.6"
+                android:text=":"
+                android:textColor="#303030"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/edTxtRCDetailDate"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="6"
+                android:background="@drawable/edttxt_states"
+                android:enabled="false"
+                android:focusable="false"
+                android:inputType="datetime"
+                android:maxLength="30"
+                android:padding="7dp"
+                android:singleLine="true"
+                android:textColor="#303030"
+                android:textColorHighlight="#56C1E5"
+                android:textColorHint="#999"
+                android:textColorLink="#56C1E5"
+                android:textCursorDrawable="@null"
+                android:textSize="18sp"
+                tools:ignore="TouchTargetSizeCheck" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView86"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2.3"
+                android:text="Situation"
+                android:textColor="#303030"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/textView87"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.6"
+                android:text=":"
+                android:textColor="#303030"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/edTxtRCDetailSituation"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="6"
+                android:background="@drawable/edttxt_states"
+                android:enabled="false"
+                android:focusable="false"
+                android:inputType="text"
+                android:maxLength="30"
+                android:padding="7dp"
+                android:singleLine="true"
+                android:textColor="#303030"
+                android:textColorHighlight="#56C1E5"
+                android:textColorHint="#999"
+                android:textColorLink="#56C1E5"
+                android:textCursorDrawable="@null"
+                android:textSize="18sp"
+                tools:ignore="TouchTargetSizeCheck" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView88"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:text="Department(s)"
+                android:textColor="#303030"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/textView89"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text=":"
+                android:textColor="#303030"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/edTxtRCDetailDepart"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4.5"
+                android:background="@drawable/edttxt_states"
+                android:enabled="false"
+                android:focusable="false"
+                android:inputType="textMultiLine"
+                android:maxLength="50"
+                android:padding="7dp"
+                android:singleLine="true"
+                android:textColor="#303030"
+                android:textColorHighlight="#56C1E5"
+                android:textColorHint="#999"
+                android:textColorLink="#56C1E5"
+                android:textCursorDrawable="@null"
+                android:textSize="18sp"
+                tools:ignore="TouchTargetSizeCheck" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView90"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.7"
+                android:gravity="center_vertical"
+                android:text="Details"
+                android:textColor="#303030"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/textView91"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:gravity="center_vertical"
+                android:text=":"
+                android:textColor="#303030"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/edTxtRCDetailDetails"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="6"
+                android:background="@drawable/edttxt_states"
+                android:gravity="center_vertical"
+                android:inputType="textMultiLine"
+                android:lines="2"
+                android:maxLength="100"
+                android:maxLines="2"
+                android:padding="7dp"
+                android:singleLine="true"
+                android:textColor="#303030"
+                android:textColorHighlight="#56C1E5"
+                android:textColorHint="#999"
+                android:textColorLink="#56C1E5"
+                android:textCursorDrawable="@null"
+                android:textSize="18sp"
+                tools:ignore="TouchTargetSizeCheck" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView92"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.6"
+                android:text="Location"
+                android:textColor="#303030"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/textView93"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:text=":"
+                android:textColor="#303030"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/edTxtRCDetailLocation"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4.5"
+                android:background="@drawable/edttxt_states"
+                android:enabled="false"
+                android:focusable="false"
+                android:inputType="textMultiLine"
+                android:maxLength="100"
+                android:padding="7dp"
+                android:singleLine="true"
+                android:textColor="#303030"
+                android:textColorHighlight="#56C1E5"
+                android:textColorHint="#999"
+                android:textColorLink="#56C1E5"
+                android:textCursorDrawable="@null"
+                android:textSize="18sp"
+                tools:ignore="TouchTargetSizeCheck" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView94"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2.5"
+                android:text="Front Image"
+                android:textColor="#303030"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/textView95"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:text=":"
+                android:textColor="#303030"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/btnRCDetailFImg"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4.5"
+                android:backgroundTint="#E9EAED"
+                android:text="Upload Image"
+                android:textAllCaps="false"
+                android:textColor="#303030" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView96"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2.5"
+                android:text="Back Image"
+                android:textColor="#303030"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/textView97"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:text=":"
+                android:textColor="#303030"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/btnRCDetailBImg"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4.5"
+                android:backgroundTint="#E9EAED"
+                android:text="Upload Image"
+                android:textAllCaps="false"
+                android:textColor="#303030" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnRCDetailSubmit"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="25dp"
+        android:text="Submit"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
